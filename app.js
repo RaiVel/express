@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
 app.get('/servicios', (req, res) => {
     res.render("servicios", { servicios: "servicios" })
     // res.send("hola 2")
+    //cambio
 })
 
 app.use((req,res,next) => {
