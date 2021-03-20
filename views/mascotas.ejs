@@ -13,18 +13,18 @@
                   </tr>
                 </thead>
                 <tbody>
-            <% if (arrayMascotas.length > 0) { %>
-                <% arrayMascotas.forEach(mascota => { %>
-                          <tr>
-                            <th scope="row"><%= mascota.id %></th>
-                            <td><%= mascota.nombre %></td>
-                            <td><%= mascota.descripcion %></td>
-                            <td></td>
-                          </tr>
+                <% if (arrayMascotas.length > 0) { %>
+                    <% arrayMascotas.forEach(mascota => { %>
+                            <tr>
+                                <th scope="row"><%= mascota.id %></th>
+                                <td><%= mascota.nombre %></td>
+                                <td><%= mascota.descripcion %></td>
+                                <td></td>
+                            </tr>
                     <% }) %>
                 <% } %>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
         </div>
     </div>
 <%- include("template/footer") %>
