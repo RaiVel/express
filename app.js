@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views')
 
 app.use(express.static(__dirname + "/public"));
 app.use('/', require('./router/index'));
-app.use('/mascotas', require('./router/Mascotas'));
+app.use('/mascotas', require('./router/mascotas'));
 app.use((req,res,next) => {
     res.status(404).render("404", {error: "pagina erronea"} )
 })
